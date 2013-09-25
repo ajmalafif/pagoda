@@ -4,6 +4,7 @@ web1:
     - wp-content/uploads/
   after_build:
     - "mv pagoda/wp-config.php wp-config.php"
+    - "mv pagoda/.htaccess .htaccess"
     - "rm -R pagoda"
 db1:
   name: wp-db
